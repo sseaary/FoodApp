@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/app/add_user.dart';
+import 'package:flutter_application_1/app/user/add_user.dart';
 
 class Home extends StatelessWidget {
   Home({super.key});
 
   // collection users
-  final users = FirebaseFirestore.instance.collection('friends');
+  final users = FirebaseFirestore.instance.collection('users');
 
   // อ่านข้อมูล
   Stream<QuerySnapshot> getUsers() {
