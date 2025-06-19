@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/app/food/home_food.dart';
+import 'package:flutter_application_1/app/user/login.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,7 +15,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: MyHomePage(title: 'Food'));
+    return MaterialApp(home: LoginScreen());
+
+    // return MaterialApp(home: MyHomePage(title: 'Food'));
 
     //  users
     // return MaterialApp(home: Home());
